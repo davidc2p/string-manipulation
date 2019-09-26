@@ -7,19 +7,19 @@
     $phoneNumber = "(+351)21-851 82 52";
     $a = new lib\ValidateString();
     //Validate if phone number is from portugal
-    // $b = $a->isPhoneNumber($phoneNumber, false, 'PT');
-    // print '<br>Validate if phone number '.$phoneNumber.' is from portugal: ';
-    // var_dump ($b);
+    $b = $a->isPhoneNumber($phoneNumber, false, 'PT');
+    print '<br>Validate if phone number '.$phoneNumber.' is from portugal: ';
+    var_dump ($b);
 
     //Validate if phone number is from france
-    // $b = $a->isPhoneNumber($phoneNumber, false, 'FR');
-    // print '<br>Validate if phone number '.$phoneNumber.' is from France: ';
-    // var_dump ($b);
+    $b = $a->isPhoneNumber($phoneNumber, false, 'FR');
+    print '<br>Validate if phone number '.$phoneNumber.' is from France: ';
+    var_dump ($b);
 
     //Validate if phone number is from any country
-    // $b = $a->isPhoneNumber($phoneNumber, false);
-    // print '<br>Validate if phone number '.$phoneNumber.' is from any country: ';
-    // var_dump ($b);
+    $b = $a->isPhoneNumber($phoneNumber, false);
+    print '<br>Validate if phone number '.$phoneNumber.' is from any country: ';
+    var_dump ($b);
 
     //Validate if phone number is from any country without country code (not found)
     $phoneNumber = "51-851-82-5273";
@@ -45,10 +45,10 @@
     var_dump ($b);
 
     //Validate is phone number really exists
-    // $phoneNumber = "(351)21-851-82-52";
-    // $b = $a->isPhoneNumber($phoneNumber, true);
-    // print '<br>Validate is phone number '.$phoneNumber.' really exists: ';
-    // var_dump ($b);
+    $phoneNumber = "(351)21-851-82-52";
+    $b = $a->isPhoneNumber($phoneNumber, true);
+    print '<br>Validate is phone number '.$phoneNumber.' really exists: ';
+    var_dump ($b);
 
 
 ?>

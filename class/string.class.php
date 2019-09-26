@@ -314,9 +314,9 @@
                         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
                         CURLOPT_CUSTOMREQUEST => "GET",
                         CURLOPT_HTTPHEADER => array(
-                            "authorization: d7d4065698e152fb0a3cf9cfb6ab3ca72891d0320209d70be198d92f31e5",
+                            "authorization: ".$this->secrets['quickemailverification_api_key'],
                             "x-rapidapi-host: quickemailverification.p.rapidapi.com",
-                            "x-rapidapi-key: 9c16016761msh1d72a0d419bb42ep133d4ejsn4a559c15056c"
+                            "x-rapidapi-key: ".$this->secrets['rapidapi_key'] 
                         ),
                     ));
 
