@@ -1,5 +1,7 @@
 # string-manipulation
 
+This projects aims to create new string methods 
+
 List of Methods
 
 isPhoneNumber
@@ -40,6 +42,7 @@ isPhoneNumber
         @linetype               (string)	Returns the line type of the specified phone number (See: Line Type Detection)
 
 isEmail
+
     Validate an email
     and 
     Check if email exists invoking a service https://quickemailverification.p.rapidapi.com/v1/verify (register to create your account there)
@@ -82,3 +85,6 @@ isEmail
         @did_you_mean           (string)    Returns email suggestions if specific typo errors found in email
         @success                (bool)      true if the API request was successful
         @message                (string)    Describes API call failure reason
+
+
+
